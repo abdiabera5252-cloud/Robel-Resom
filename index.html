@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robel Resom | Fitness & Lifestyle Coach</title>
+    
+    <!-- Tailwind CSS (via CDN for instant rendering) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Configuration for Custom Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            gray: '#141414',
+                            blue: '#00d2ff',
+                            light: '#f3f4f6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="font-heading font-black text-2xl tracking-tighter">
+                        ROBEL<span class="text-brand-blue">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-brand-blue transition">About</a>
+                    <a href="#method" class="hover:text-brand-blue transition">Method</a>
+                    <a href="#content" class="hover:text-brand-blue transition">Insights</a>
+                    <a href="#apply" class="hover:text-brand-blue transition">Coaching</a>
+                </div>
+                <div>
+                    <a href="#apply" class="bg-brand-blue text-brand-dark font-bold py-2 px-6 rounded-full hover:bg-white transition duration-300 text-sm">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Image/Video Placeholder -->
+        <div class="absolute inset-0 z-0">
+            <!-- In production, replace this image with a looping <video> of Robel training -->
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Gym Background" 
+                 class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <span class="text-brand-blue font-bold tracking-widest uppercase text-sm mb-4 block">Certified Personal Trainer</span>
+            <h1 class="text-5xl md:text-7xl font-heading font-extrabold mb-6 leading-tight drop-shadow-lg">
+                Build The Body. <br> <span class="text-brand-blue">Master The Mind.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Stop guessing in the gym. I provide the structure, accountability, and science-backed coaching you need to transform your lifestyle.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#apply" class="bg-brand-blue text-brand-dark font-bold py-4 px-10 rounded-full hover:bg-white hover:scale-105 transition duration-300 shadow-[0_0_20px_rgba(0,210,255,0.4)]">
+                    Apply For Coaching
+                </a>
+                <a href="#content" class="border-2 border-gray-600 text-white font-bold py-4 px-10 rounded-full hover:border-white hover:bg-white/10 transition duration-300">
+                    Watch My Content
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST / CERTIFICATIONS BAR -->
+    <div class="bg-brand-gray border-y border-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
+            <div class="flex items-center gap-2"><i class="fa-solid fa-certificate text-brand-blue"></i> <span class="font-semibold">Certified PT</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-dumbbell text-brand-blue"></i> <span class="font-semibold">Strength & Conditioning</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-apple-whole text-brand-blue"></i> <span class="font-semibold">Nutrition Coaching</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-laptop text-brand-blue"></i> <span class="font-semibold">Online & In-Person</span></div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <!-- Replace with Robel's professional photo -->
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Robel Resom" 
+                         class="rounded-2xl shadow-2xl object-cover h-[500px] w-full border border-gray-800">
+                    <div class="absolute -bottom-6 -right-6 bg-brand-blue text-brand-dark p-6 rounded-2xl hidden md:block">
+                        <p class="font-heading font-black text-3xl">100%</p>
+                        <p class="font-bold text-sm uppercase tracking-wide">Dedication</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-heading font-bold mb-6">More Than Just A Workout.</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        Hey, I'm Robel. As a Certified Personal Trainer, my mission isn't just to help you lose weight or build muscle—it's to help you build a lifestyle that sustains those results forever.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        Whether you are a beginner looking for guidance or an experienced lifter stuck in a plateau, I provide the blueprint. My approach combines proven fitness science with practical, real-world nutrition and mindset coaching.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-brand-blue"></i> Customized training programs</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-brand-blue"></i> Sustainable nutrition strategies</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-brand-blue"></i> Weekly accountability & check-ins</li>
+                    </ul>
+                    <a href="#apply" class="text-brand-blue font-bold hover:text-white transition flex items-center gap-2">
+                        Start your journey <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE METHOD (SERVICES) -->
+    <section id="method" class="py-24 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-heading font-bold mb-4">The Coaching Method</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-16">A comprehensive approach to fitness that addresses the three pillars of lasting transformation.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Pillar 1 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 hover:border-brand-blue transition duration-300">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6 text-brand-blue text-2xl">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1. Custom Training</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">No cookie-cutter workouts. Your program is built around your schedule, equipment availability, and specific strength goals.</p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 hover:border-brand-blue transition duration-300">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6 text-brand-blue text-2xl">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2. Nutrition & Lifestyle</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">We don't do crash diets. I'll teach you how to fuel your body for performance while still enjoying the foods you love.</p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-gray-800 hover:border-brand-blue transition duration-300">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6 text-brand-blue text-2xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3. Accountability</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">The secret to results is consistency. With weekly check-ins and direct messaging access, you'll never feel alone on your journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT GRID (SOCIAL PROOF) -->
+    <section id="content" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-heading font-bold mb-2">Coaching Insights</h2>
+                    <p class="text-gray-400">Actionable tips from my social media content.</p>
+                </div>
+                <a href="https://www.tiktok.com/@robelresom" target="_blank" class="hidden md:flex items-center gap-2 text-brand-blue hover:text-white transition">
+                    Follow on TikTok <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Video 1 -->
+                <div class="relative group rounded-2xl overflow-hidden cursor-pointer border border-gray-800">
+                    <!-- Placeholder image mimicking his TikTok thumbnail -->
+                    <div class="w-full h-80 bg-gradient-to-br from-blue-900 to-green-900 flex items-center justify-center">
+                        <i class="fa-solid fa-pills text-6xl text-white/30"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-brand-blue text-sm font-bold mb-1 flex items-center gap-1"><i class="fa-solid fa-play"></i> 11.4K Views</span>
+                        <h3 class="text-xl font-bold text-white">3 Core Benefits of Magnesium</h3>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="relative group rounded-2xl overflow-hidden cursor-pointer border border-gray-800">
+                    <div class="w-full h-80 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                        <i class="fa-solid fa-weight-hanging text-6xl text-white/30"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-brand-blue text-sm font-bold mb-1 flex items-center gap-1"><i class="fa-solid fa-play"></i> 2.1K Views</span>
+                        <h3 class="text-xl font-bold text-white">Should You Row Like Arnold?</h3>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="relative group rounded-2xl overflow-hidden cursor-pointer border border-gray-800">
+                    <div class="w-full h-80 bg-gradient-to-br from-orange-900 to-yellow-900 flex items-center justify-center">
+                        <i class="fa-solid fa-bowl-food text-6xl text-white/30"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="text-brand-blue text-sm font-bold mb-1 flex items-center gap-1"><i class="fa-solid fa-play"></i> 5.8K Views</span>
+                        <h3 class="text-xl font-bold text-white">700kcal High Protein Meal</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                <a href="https://www.tiktok.com/@robelresom" target="_blank" class="inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-700 transition">
+                    Follow on TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATION FORM (CTA) -->
+    <section id="apply" class="py-24 bg-brand-gray relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div class="max-w-3xl mx-auto px-4 relative z-10">
+            <div class="bg-brand-dark p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-800">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Apply for 1:1 Coaching</h2>
+                    <p class="text-gray-400">I only take on a limited number of clients to ensure the highest quality of coaching. Fill out the form below to see if we're a good fit.</p>
+                </div>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                            <input type="text" placeholder="John" class="w-full bg-brand-gray border border-gray-700 rounded-lg p-4 text-white focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                            <input type="text" placeholder="Doe" class="w-full bg-brand-gray border border-gray-700 rounded-lg p-4 text-white focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <input type="email" placeholder="john@example.com" class="w-full bg-brand-gray border border-gray-700 rounded-lg p-4 text-white focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">What is your primary goal?</label>
+                        <select class="w-full bg-brand-gray border border-gray-700 rounded-lg p-4 text-gray-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition appearance-none">
+                            <option>Select a goal...</option>
+                            <option>Fat Loss</option>
+                            <option>Muscle Gain</option>
+                            <option>General Health & Longevity</option>
+                            <option>Preparing for an Event</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Tell me about your current training and nutrition habits</label>
+                        <textarea placeholder="I currently go to the gym 3x a week but struggle with my diet..." rows="4" class="w-full bg-brand-gray border border-gray-700 rounded-lg p-4 text-white focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue transition"></textarea>
+                    </div>
+                    
+                    <button type="button" onclick="alert('Application submitted! (This is a demo)')" class="w-full bg-brand-blue text-brand-dark font-black text-lg py-5 rounded-xl hover:bg-white hover:scale-[1.02] transition duration-300 shadow-[0_0_20px_rgba(0,210,255,0.3)]">
+                        Submit Application
+                    </button>
+                    <p class="text-center text-xs text-gray-500 mt-4">By submitting, you agree to receive email communication from Robel Resom.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <a href="#" class="font-heading font-black text-2xl tracking-tighter">
+                    ROBEL<span class="text-brand-blue">.</span>
+                </a>
+                <p class="text-gray-500 text-sm mt-2">© 2024 Robel Resom Coaching. All rights reserved.</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="https://www.tiktok.com/@robelresom" target="_blank" class="w-10 h-10 rounded-full bg-brand-gray flex items-center justify-center hover:bg-brand-blue hover:text-brand-dark transition">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@RobelFitN..." target="_blank" class="w-10 h-10 rounded-full bg-brand-gray flex items-center justify-center hover:bg-brand-blue hover:text-brand-dark transition">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-brand-gray flex items-center justify-center hover:bg-brand-blue hover:text-brand-dark transition">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            
+            <div class="flex gap-6 text-sm text-gray-500">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
